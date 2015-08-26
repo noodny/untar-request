@@ -1,0 +1,31 @@
+{
+    "name": "untar-request",
+    "version": "1.0.0",
+    "description": "A utility for ungzipping and untaring a file directly from a url while it is being downloaded",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/noodny/untar-request.git"
+    },
+    "keywords": [
+        "tar",
+        "gzip",
+        "untar",
+        "ungzip",
+        "unzip"
+    ],
+    "author": "Krzysztof Jakubik",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/noodny/untar-request/issues"
+    },
+    "homepage": "https://github.com/noodny/untar-request#readme",
+    "dependencies": {
+        "gunzip-maybe": "^1.2.1",
+        "request": "^2.61.0",
+        "tar-fs": "^1.8.1"
+    }
+}
