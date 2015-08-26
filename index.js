@@ -10,13 +10,13 @@ module.exports = function(options, cb) {
         throw new Error('Url option is required');
     }
 
-    if(!options.dir) {
-        throw new Error('Dir option is required');
+    if(!options.dest) {
+        throw new Error('Dest option is required');
     }
 
     var stream = new PassThrough();
     var unzip = gunzip();
-    var untar = tar.extract(options.dir, options);
+    var untar = tar.extract(options.dest, options);
 
     stream.pipe(unzip).pipe(untar);
 
