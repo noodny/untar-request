@@ -7,10 +7,22 @@ streams, finally writing it to a selected directory.
 ```
 var untarRequest = require('untar-request');
 
-var url = 'http://example.com/some-archive.tar.gz';
-var dest = './';
+var options = {
+     url: 'http://example.com/some-archive.tar.gz',
+     dest: './'
+}
 
-untarRequest(url, dest, function() {
+untarRequest(options, function() {
     console.log('done');
 });
+```
+
+You may want to use `options.dmode` and `options.fmode` to set appropriate access modes for directories and files, e.g.:
+```
+var options = {
+     url: 'http://example.com/some-archive.tar.gz',
+     dest: './',
+     dmode: 0555,
+     fmode: 0444
+}
 ```
