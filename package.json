@@ -1,6 +1,6 @@
 {
     "name": "untar-request",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "description": "A utility for ungzipping and untaring a file directly from a url while it is being downloaded",
     "main": "index.js",
     "scripts": {

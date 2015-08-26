@@ -1,3 +1,6 @@
+[![bitHound Score](https://www.bithound.io/github/noodny/untar-request/badges/score.svg)](https://www.bithound.io/github/noodny/untar-request)
+[![npm](https://img.shields.io/npm/v/untar-request.svg)](https://www.npmjs.com/package/untar-request)
+
 ### About
 This module allows you to download a `.tar.gz` archive from a url, and decompress it on the fly by utilizing nodejs
 streams, finally writing it to a selected directory.
